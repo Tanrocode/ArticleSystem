@@ -1,11 +1,6 @@
 import secrets
 from flask import Flask, render_template, request
 from flask_mysqldb import MySQL
-from flask_bootstrap import Bootstrap
-import secrets
-from flask import Flask, render_template, request
-from flask_mysqldb import MySQL
-from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField
@@ -28,7 +23,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 mysql = MySQL(app)
-Bootstrap(app)
 
 class AdminLogin(FlaskForm):
     username = StringField('Username', validators=[InputRequired(), Length(min=3, max=15)])
