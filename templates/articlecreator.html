@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="inputstatement">
+<form method="POST" action="/createarticle">
+
+    {{ form.csrf_token }}
+   
+    {{ form.name.label }} 
+
+    {{ form.name }}
+    {{ form.content }}
+    {{ form.content.label }}
+
+    <input type="submit" value="Submit">
+</form>
+</div>
+{% endblock %}
