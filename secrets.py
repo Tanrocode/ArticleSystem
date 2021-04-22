@@ -1,0 +1,5 @@
+dbuser = 'YOUR_DATABASE_USER (could be 'root')'
+dbpass = 'YOUR_DATABASE_PASSWORD'
+dbhost = 'localhost (or website host)'
+dbname = 'YOUR_DATABASE_NAME'
+dbsecretkey = 'YOUR_SECRET_KEY'
